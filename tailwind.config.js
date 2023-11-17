@@ -3,6 +3,9 @@ export default {
   content: ["./index.html"],
   theme: {
     extend: {
+      animation: {
+        "arrow-down": "arrow-down ease 1.5s infinite",
+      },
       colors: {
         // =====main theme colors=====
         "first-color": "#0e2431",
@@ -31,6 +34,13 @@ export default {
         // =====font size colors=====
         "small-font-size": "0.9em",
         "normal-font-size": "1em",
+      },
+      keyframes: {
+        // =====scroll down animation=====
+        "arrow-down": {
+          "0%": { transform: "translateY(0)" },
+          "30%": { transform: "translateY(10px)" },
+        },
       },
     },
   },

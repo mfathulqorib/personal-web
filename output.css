@@ -543,13 +543,39 @@ body {
   position: relative;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
+.my-\[10px\] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mr-\[40px\] {
+  margin-right: 40px;
+}
+
 .mr-\[50px\] {
   margin-right: 50px;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.mt-\[25px\] {
+  margin-top: 25px;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -560,12 +586,60 @@ body {
   height: 5rem;
 }
 
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .max-w-\[1250px\] {
   max-width: 1250px;
 }
 
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-arrow-down {
+  animation: arrow-down ease 1.5s infinite;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -576,9 +650,28 @@ body {
   scroll-behavior: smooth;
 }
 
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
+.bg-second-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(106 89 209 / var(--tw-bg-opacity));
+}
+
 .px-\[20px\] {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.px-\[2rem\] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .py-0 {
@@ -586,8 +679,30 @@ body {
   padding-bottom: 0px;
 }
 
+.py-\[18\.7px\] {
+  padding-top: 18.7px;
+  padding-bottom: 18.7px;
+}
+
+.py-\[4rem\] {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.text-\[1\.2em\] {
+  font-size: 1.2em;
+}
+
 .text-\[1\.3em\] {
   font-size: 1.3em;
+}
+
+.text-\[1\.5em\] {
+  font-size: 1.5em;
+}
+
+.text-\[4em\] {
+  font-size: 4em;
 }
 
 .text-normal-font-size {
@@ -602,13 +717,50 @@ body {
   font-weight: 600;
 }
 
+.leading-\[50px\] {
+  line-height: 50px;
+}
+
+.leading-\[70px\] {
+  line-height: 70px;
+}
+
+.tracking-\[1px\] {
+  letter-spacing: 1px;
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-first-color {
   --tw-text-opacity: 1;
   color: rgb(14 36 49 / var(--tw-text-opacity));
 }
 
+.text-second-color {
+  --tw-text-opacity: 1;
+  color: rgb(106 89 209 / var(--tw-text-opacity));
+}
+
+.text-third-color {
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity));
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.hover\:bg-hover-color:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 79 208 / var(--tw-bg-opacity));
+}
+
+.hover\:text-hover-color:hover {
+  --tw-text-opacity: 1;
+  color: rgb(97 79 208 / var(--tw-text-opacity));
 }
 
 .hover\:text-second-color:hover {
