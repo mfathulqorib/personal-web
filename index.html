@@ -26,7 +26,7 @@
 
     <!--=======Header=======-->
     <header
-      class="nav-bar duration-600 relative mx-auto flex h-[5rem] max-w-[1250px] items-center justify-between px-[20px] py-0 ease-in"
+      class="nav-bar duration-600 sticky top-0 z-10 mx-auto flex h-[5rem] max-w-[1250px] items-center justify-between px-[20px] py-0 backdrop-blur-3xl ease-in"
     >
       <a href="#" class="logo text-[1.3em] font-semibold text-first-color"
         >Amri.</a
@@ -61,16 +61,17 @@
         </div>
       </div>
     </header>
+
     <!--=======Home section=======-->
     <section
-      class="home relative mx-auto flex min-h-[100vh] max-w-[1250px] flex-col items-center justify-center px-[2rem] py-[4rem]"
+      class="home flex-center relative mx-auto min-h-[100vh] max-w-[1250px] flex-col px-[2rem] py-[4rem]"
       id="home"
     >
       <div class="home-container flex w-full items-center justify-between">
         <div class="media-icons mr-[40px] flex flex-col">
           <a href="#"
             ><i
-              class="fab fa-facebook mx-0 my-[10px] text-[1.5em] text-second-color hover:text-hover-color"
+              class="fa-brands fa-facebook-f mx-0 my-[10px] text-[1.5em] text-second-color hover:text-hover-color"
             >
             </i
           ></a>
@@ -81,7 +82,7 @@
           ></a>
           <a href="#"
             ><i
-              class="fab fa-twitter mx-0 my-[10px] text-[1.5em] text-second-color hover:text-hover-color"
+              class="fa-brands fa-x-twitter mx-0 my-[10px] text-[1.5em] text-second-color hover:text-hover-color"
             ></i
           ></a>
         </div>
@@ -102,9 +103,7 @@
             I create stunning websites for your business, Highly experienced in
             web design and development.
           </p>
-          <a
-            href=""
-            class="btn mt-[25px] inline-block rounded-[10px] bg-second-color px-[30px] py-[18.7px] text-normal-font-size font-medium tracking-[1px] text-[#fff] hover:bg-hover-color"
+          <a href="#" class="btn"
             >Contact Me <i class="fas fa-arrow-circle-right"></i
           ></a>
         </div>
@@ -125,7 +124,76 @@
         ></i
       ></a>
     </section>
+
     <!--=======About section=======-->
+    <section
+      class="about section relative mx-auto w-[1150px] px-[2rem] pb-[2rem] pt-[6rem]"
+      id="about"
+    >
+      <div class="flex-center container relative flex-col">
+        <h1
+          class="section-title-01 bg-section-title-01 mb-[2rem] text-[4.5em] font-extrabold"
+        >
+          About Me
+        </h1>
+        <h2
+          class="section-title-02 before:custom-underline -translate-y-[80px] text-[2.5em] font-bold"
+        >
+          About Me
+        </h2>
+        <div class="content flex-center w-full gap-x-[40px]">
+          <div class="about-img relative">
+            <img
+              class="min-w-[500px] max-w-full rounded-[10px]"
+              src="images/about-img.png"
+              alt="about me"
+            />
+          </div>
+          <div class="about-info">
+            <div class="description max-w-[600px]">
+              <h3 class="mb-[10px] text-[2em] font-semibold">I'm Martian</h3>
+              <h4 class="mb-[10px] text-[1.3em] font-semibold">
+                A Lead
+                <span class="text-second-color">Front-End Developer</span> based
+                in
+                <span>California</span>
+              </h4>
+              <p
+                class="mb-[15px] border-b-[2px] border-solid border-third-color pb-[25px] text-normal-font-size text-third-color"
+              >
+                I design and develop services for customers specializing
+                creating stylish, modern websites, web services and online
+                stores. My passion is to design digital user experiences through
+                meaningful interactions. Check out my Portfolio
+              </p>
+            </div>
+            <ul class="profesional-list flex gap-x-[30px]">
+              <li class="list-item">
+                <h3 class="text-[2.5em] font-bold">5+</h3>
+                <span class="text-small-font-size text-third-color"
+                  >Years of<br />Experience</span
+                >
+              </li>
+              <li class="list-item">
+                <h3 class="text-[2.5em] font-bold">3K+</h3>
+                <span class="text-small-font-size text-third-color"
+                  >Happy<br />Customers</span
+                >
+              </li>
+              <li class="list-item">
+                <h3 class="text-[2.5em] font-bold">5+</h3>
+                <span class="text-small-font-size text-third-color"
+                  >Success<br />Projects</span
+                >
+              </li>
+            </ul>
+            <a href="#" class="btn"
+              >Download CV <i class="fas fa-download"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--=======Skills section=======-->
 

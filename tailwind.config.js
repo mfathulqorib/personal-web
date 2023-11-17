@@ -6,6 +6,10 @@ export default {
       animation: {
         "arrow-down": "arrow-down ease 1.5s infinite",
       },
+      backgroundImage: {
+        "section-title-01":
+          "linear-gradient(to top, transparent 0%, #0e2431 70%)",
+      },
       colors: {
         // =====main theme colors=====
         "first-color": "#0e2431",

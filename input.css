@@ -8,3 +8,26 @@
     @apply bg-transparent-color-01;
   }
 }
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .section-title-01 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.1;
+  }
+  .custom-underline {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background: #6a59d1;
+  }
+  .btn {
+    @apply mt-[25px] inline-block rounded-[10px] bg-second-color px-[30px] py-[18.7px] text-normal-font-size font-medium tracking-[1px] text-[#fff] hover:bg-hover-color;
+  }
+}
