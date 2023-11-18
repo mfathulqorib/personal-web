@@ -22,7 +22,7 @@ export default {
         // =====backgroung colors=====
         "body-bg-color": "#fefefe",
         "card-bg-color": "#fff",
-        "transparent-color-01": "#0000001a",
+        "transparent-color-01": "#0000000a",
         "transparent-color-02": "#6a59d11a",
         "line-color": "#d7d7d7",
 
@@ -31,7 +31,7 @@ export default {
         "scroll-thumb-color": "#70768a",
         "scroll-thumb-hover-color": "#454f6b",
       },
-      dropShadow: {
+      boxShadow: {
         "box-shadow": "0px 0px 20px rgba(0 0 0 / 10%)",
       },
       fontSize: {

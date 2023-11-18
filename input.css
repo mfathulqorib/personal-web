@@ -13,11 +13,11 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
-  .section-title-01 {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0.1;
+
+  .container-div {
+    @apply relative flex-col;
   }
+
   .custom-underline {
     content: "";
     position: absolute;
@@ -27,7 +27,61 @@
     bottom: 0;
     background: #6a59d1;
   }
-  .btn {
-    @apply mt-[25px] inline-block rounded-[10px] bg-second-color px-[30px] py-[18.7px] text-normal-font-size font-medium tracking-[1px] text-[#fff] hover:bg-hover-color;
+
+  .section {
+    @apply relative mx-auto w-[1150px] px-[2rem] pb-[2rem] pt-[6rem];
   }
+
+  .section-title-01 {
+    @apply mb-[2rem] bg-section-title-01 text-[4.5em] font-extrabold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.1;
+  }
+
+  .section-title-02 {
+    @apply -translate-y-[80px] text-[2.5em] font-bold;
+  }
+
+  .sub-section {
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 0;
+  }
+
+  .btn {
+    @apply mt-[25px] inline-block rounded-[10px] bg-second-color px-[20px] py-[12.5px] text-normal-font-size font-medium tracking-[1px] text-[#fff] hover:bg-hover-color;
+  }
+
+  .contact-card .title h2 {
+    font-size: 2em;
+    font-weight: 700;
+    background: linear-gradient(to top, transparent 0%, #0e2431 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.9;
+  }
+
+  #sticky-nav-bar {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 20px rgba(0 0 0 / 10%);
+  }
+
+  #nav-bar {
+    height: calc(2.5rem + 1rem);
+  }
+}
+
+::-webkit-scrollbar {
+  @apply w-[10px] bg-scroll-bar-color;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-[2em] bg-scroll-thumb-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-scroll-thumb-hover-color;
 }
