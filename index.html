@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,8 +21,19 @@
   </head>
   <body>
     <!--=======Scroll to top button=======-->
+    <div
+      class="scrollToTop-btn flex-center fixed bottom-[20px] right-0 z-10 h-[45px] w-[45px] cursor-pointer rounded-[3px] border-2 border-white bg-second-color text-normal-font-size text-white opacity-0 duration-500 ease-in hover:bg-hover-color"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </div>
 
     <!--=======Light/Dark theme button=======-->
+    <!-- <div
+      class="theme-btn flex-center fixed right-0 top-[100px] z-10 h-[50px] w-[50px] cursor-pointer rounded-bl-[5px] rounded-br-none rounded-tl-[5px] rounded-tr-none bg-transparent-color-03 text-[1.2em] shadow-box-shadow backdrop-blur-[20px]"
+    >
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </div> -->
 
     <!--=======Header=======-->
     <header
@@ -32,7 +43,7 @@
         class="nav-bar relative mx-auto flex h-[5rem] max-w-[1250px] items-center justify-between px-[20px] py-0 duration-[.6s] ease-in"
       >
         <div class="navigation">
-          <div class="nav-item">
+          <div class="nav-items">
             <a
               class="mr-[50px] text-normal-font-size font-medium text-first-color hover:text-second-color"
               href="#home"
@@ -42,16 +53,6 @@
               class="mr-[50px] text-normal-font-size font-medium text-first-color hover:text-second-color"
               href="#about"
               >About</a
-            >
-            <a
-              class="mr-[50px] text-normal-font-size font-medium text-first-color hover:text-second-color"
-              href="#skills"
-              >Skills</a
-            >
-            <a
-              class="mr-[50px] text-normal-font-size font-medium text-first-color hover:text-second-color"
-              href="#services"
-              >Services</a
             >
             <a
               class="text-normal-font-size font-medium text-first-color hover:text-second-color"
@@ -92,11 +93,11 @@
         </div>
         <div class="info">
           <h2 class="text-[4em] font-semibold leading-[70px]">Hi,</h2>
-          <h3
-            class="text-[1.3em] font-semibold leading-[50px] text-third-color"
+          <span
+            id="element"
+            class="text-[1.3em] font-semibold text-third-color lg:leading-[50px]"
           >
-            I am Amri, I am Operations Managers at eFishery
-          </h3>
+          </span>
           <p class="max-w-[450px] text-normal-font-size text-third-color">
             I am currently a student of the Fullstack Developer program at
             Devscale Indonesia. Trying to create cool personal website 😎
@@ -105,7 +106,7 @@
             >Contact Me <i class="fas fa-arrow-circle-right"></i
           ></a>
         </div>
-        <div class="home-img relative">
+        <div class="home-img relative hidden md:block">
           <img
             class="w-[90%] translate-x-0 translate-y-0"
             src="images/main-img.png"
@@ -129,7 +130,7 @@
         <h1 class="section-title-01">About Me</h1>
         <h2 class="section-title-02 before:custom-underline">About Me</h2>
         <div class="content flex-center w-full gap-x-[40px]">
-          <div class="about-img relative">
+          <div class="about-img relative hidden md:block">
             <img
               class="min-w-[500px] max-w-full rounded-[10px]"
               src="images/about-img.png"
@@ -158,7 +159,7 @@
             </div>
             <ul class="profesional-list flex gap-x-[30px]">
               <li class="list-item">
-                <h3 class="text-[2.5em] font-bold">3</h3>
+                <h3 class="text-[2.5em] font-bold">2</h3>
                 <span class="text-small-font-size text-third-color"
                   >Complete<br />Assignments</span
                 >
@@ -183,37 +184,27 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!--=======Skills section=======-->
-
-    <!--=======Services section=======-->
-
-    <!--=======Portfolio section=======-->
-
-    <!--=======Get-in-touct=======-->
-    <div class="get-in-touch sub-section mt-[70px]">
-      <div class="container-div">
-        <div class="content flex-center w-full">
-          <div
-            class="contact-card flex-center relative w-[90%] gap-x-[50px] rounded-[10px] bg-card-bg-color p-[50px] shadow-box-shadow"
-          >
-            <div class="title uppercase leading-[40px]">
-              <h4 class="text-[1em] font-light leading-[30px]">Let's Talk</h4>
-              <h3 class="text-[1.8em] font-normal">About Our</h3>
-              <h2>Collaboration</h2>
-            </div>
-            <div class="contact-btn">
-              <button class="btn cursor-pointer">
-                Get in Touch <i class="fas fa-paper-plane"></i>
-              </button>
+      <div class="get-in-touch sub-section mt-[70px]">
+        <div class="container-div">
+          <div class="content flex-center w-full">
+            <div
+              class="contact-card flex-center relative w-[100%] gap-x-[50px] rounded-[10px] bg-card-bg-color p-[50px] shadow-box-shadow"
+            >
+              <div class="title uppercase leading-[40px]">
+                <h4 class="text-[1em] font-light leading-[30px]">Let's Talk</h4>
+                <h3 class="text-[1.8em] font-normal">About Our</h3>
+                <h2>Collaboration</h2>
+              </div>
+              <div class="contact-btn">
+                <button id="appreciate" class="btn cursor-pointer">
+                  Get in Touch <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!--=======Our Clients=======-->
+    </section>
 
     <!--=======Contact section=======-->
     <section class="contact section" id="contact">
@@ -324,7 +315,7 @@
       class="mt-[50px] flex w-full flex-col items-center justify-center bg-second-color px-[2rem] py-[2rem] text-white"
     >
       <div class="footer-container flex w-full max-w-[1150px] justify-between">
-        <div class="about">
+        <div class="about flex flex-col justify-between lg:block">
           <h2>Amri.</h2>
           <p class="mb-[20px] text-normal-font-size font-light">
             Devscale Indonesia Stundent
@@ -336,29 +327,17 @@
           <h3 class="mb-[30px] mt-[20px] text-[1.1em] font-medium">More</h3>
           <ul class="flex">
             <li>
-              <a class="m-[20px] hover:text-first-color" href="#skills"
-                >Skills</a
-              >
-            </li>
-            <li>
-              <a class="m-[20px] hover:text-first-color" href="#serivece"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a class="m-[20px] hover:text-first-color" href="#portofolio"
-                >Portfolio</a
-              >
-            </li>
-            <li>
               <a class="m-[20px] hover:text-first-color" href="#contact"
                 >Contact</a
               >
             </li>
           </ul>
-          <div class="footer-copyright">
-            <p class="mt-[70px] text-normal-font-size font-light italic">
-              Devscale Indonesia, made with <span class="not-italic">❤️</span>
+          <div class="footer-copyright text-center">
+            <p
+              class="mt-[12px] text-normal-font-size font-light italic lg:mt-[50px]"
+            >
+              With support from Devscale Indonesia, made with
+              <span class="not-italic">❤️</span>
             </p>
           </div>
         </div>

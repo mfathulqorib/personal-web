@@ -55,6 +55,20 @@
     @apply mt-[25px] inline-block rounded-[10px] bg-second-color px-[20px] py-[12.5px] text-normal-font-size font-medium tracking-[1px] text-[#fff] hover:bg-hover-color;
   }
 
+  .nav-items a.active {
+    @apply text-second-color;
+  }
+
+  .scrollToTop-btn.active {
+    right: 20px;
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  /* .theme-btn .fa-sun {
+    display: none;
+  } */
+
   .contact-card .title h2 {
     font-size: 2em;
     font-weight: 700;

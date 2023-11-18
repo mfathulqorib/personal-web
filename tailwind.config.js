@@ -24,6 +24,7 @@ export default {
         "card-bg-color": "#fff",
         "transparent-color-01": "#0000000a",
         "transparent-color-02": "#6a59d11a",
+        "transparent-color-03": "#0000001a",
         "line-color": "#d7d7d7",
 
         // =====scroll bar colors=====
